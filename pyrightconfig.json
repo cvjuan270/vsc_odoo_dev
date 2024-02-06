@@ -1,0 +1,18 @@
+{
+    // "stubPath": "/path/odoo-stubs",
+    "extraPaths": [
+        // Agregar path de core de odoo
+        "/home/juan/dev/odoo/16-dev/vsc-odoo-dev/odoo",
+        // Agregar path de odoo/addons
+        "/home/juan/dev/odoo/16-dev/vsc-odoo-dev/odoo/addons",
+
+        // Agregar path de addons personalizados
+        "./custom-addons/OCA/pos",
+        "./dev-addons/tagre-edi",
+        "./dev-addons/acs-hms-custom",
+    ],
+    // paths y files a excluir
+    "exclude": [
+        "**/__pycache__",
+    ]
+}

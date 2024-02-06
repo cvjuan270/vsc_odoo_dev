@@ -1,0 +1,73 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python:Odoo",
+      "type": "python",
+      "request": "launch",
+      "stopOnEntry": false,
+      "python": "/home/juan/dev/odoo/16-dev/vsc-odoo-dev/.venv/bin/python",
+      "console": "integratedTerminal",
+      "program": "${workspaceRoot}/odoo/odoo-bin",
+      "args": [
+        "-c", "${workspaceRoot}/odoo.conf",
+        "--limit-time-real", "99999",
+        // "-d", "account_test",
+        // "-u", "base_spot"
+        // "-i","om_account_accountant,account_usability,web_responsive,web_theme_classic,pos_pe_invoice,account_reconcile_oca,stock_no_negative,stock_picking_invoice_link,stock_quantity_history_location"
+        // "-u", "l10n_pe_cpe" 
+      ],
+      "cwd": "${workspaceRoot}"
+    },
+    {
+      "name": "odoo-dev-16.0-install-addons",
+      "type": "python",
+      "request": "launch",
+      "program": "~/Odoo/src/16.0/odoo-bin",
+      "console": "integratedTerminal",
+      "args": [
+          "-c","~/Odoo/instances/odoo-dev-16.0/odoo.conf",
+          "--limit-time-real", "99999",
+          "-d", "odoo-dev-16.0",
+          "-i","",
+          "--stop-after-init"
+      ]
+  },
+  {
+      "name": "odoo-dev-16.0-update-addons",
+      "type": "python",
+      "request": "launch",
+      "program": "~/Odoo/src/16.0/odoo-bin",
+      "console": "integratedTerminal",
+      "args": [
+          "-c","~/Odoo/instances/odoo-dev-16.0/odoo.conf",
+          "--limit-time-real", "99999",
+          "-d", "odoo-dev-16.0",
+          "-u","",
+          "--stop-after-init"
+      ]
+  },
+  {
+      "name": "odoo-dev-16.0-repl",
+      "type": "python",
+      "request": "launch",
+      "program": "~/Odoo/src/16.0/odoo-bin",
+      "console": "integratedTerminal",
+      "args": [
+          "shell",
+          "-c","~/Odoo/instances/odoo-dev-16.0/odoo.conf",
+          "--limit-time-real", "99999",
+          "--xmlrpc-port","8888",
+          "--longpolling-port","8899",
+          "-d", "odoo-dev-16.0",
+          "--shell-interface", "ipython"
+      ]
+  },
+  {
+    "name": "odoo-dev-16.0-test",
+    "type": "python",
+    "request": "launch",
+    "program": "/home/juan/dev/odoo/16-dev/vsc-odoo-dev/dev-addons/tagre-edi/pos_pe_invoice/test_api.py",
+  }
+  ]
+}
