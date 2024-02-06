@@ -1,8 +1,9 @@
-# inore path odoo
+# ignore path odoo
 odoo/
 .venv/
 custom-addons/*
-dev-addons/*
+!custom-addons/.gitkeep
+dev-addons/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
