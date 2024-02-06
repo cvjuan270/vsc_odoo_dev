@@ -1,0 +1,1 @@
+# vsc_odoo_dev
