@@ -1,8 +1,7 @@
 # ignore path odoo
 odoo/
 .venv/
-custom-addons/*
-!custom-addons/.gitkeep
+custom-addons/
 dev-addons/
 
 # Byte-compiled / optimized / DLL files
