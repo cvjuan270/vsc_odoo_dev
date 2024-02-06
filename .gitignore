@@ -1,6 +1,8 @@
 # inore path odoo
 odoo/
 .venv/
+custom-addons/*
+dev-addons/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

@@ -14,5 +14,6 @@
     // paths y files a excluir
     "exclude": [
         "**/__pycache__",
+        "**/venv",
     ]
 }
